@@ -1,18 +1,18 @@
 {
   "collection": {
     "info": {
-      "_postman_id": "b5a89044-1f09-4144-8660-20510ff4ea97",
+      "_postman_id": "10d234c4-1114-4826-ab1f-d72adce3a80e",
       "name": "BLUEinAPI",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2025-05-29T15:34:08.000Z",
-      "createdAt": "2025-05-29T15:34:08.000Z",
+      "updatedAt": "2025-05-29T15:41:33.000Z",
+      "createdAt": "2025-05-29T15:41:32.000Z",
       "lastUpdatedBy": "44198760",
-      "uid": "44198760-b5a89044-1f09-4144-8660-20510ff4ea97"
+      "uid": "44198760-10d234c4-1114-4826-ab1f-d72adce3a80e"
     },
     "item": [
       {
         "name": "UpdateStatus",
-        "id": "85b77ce4-ee9e-419a-afd2-a7b8228c49db",
+        "id": "23fd4834-db34-48fa-9326-ca8a71924ad4",
         "request": {
           "method": "POST",
           "header": [
@@ -39,11 +39,11 @@
           }
         },
         "response": [],
-        "uid": "44198760-85b77ce4-ee9e-419a-afd2-a7b8228c49db"
+        "uid": "44198760-23fd4834-db34-48fa-9326-ca8a71924ad4"
       },
       {
         "name": "UpdateStatus-QA",
-        "id": "55140868-ffd0-4629-bd7f-4e432c9c5754",
+        "id": "bf1bf848-e0ad-432e-85cd-b9d16b599db7",
         "request": {
           "method": "POST",
           "header": [
@@ -58,11 +58,11 @@
             "raw": "{\r\n    \"blueProjectId\": 101,\r\n    \"currentStatus\": \"DRAFT\"\r\n}"
           },
           "url": {
-            "raw": "http://AZEIQPMDMWB01.mysmithfield.com/BLUEAPI/UpdateStatus",
+            "raw": "http://AZEIQPMDMWB01.mysample.com/BLUEAPI/UpdateStatus",
             "protocol": "http",
             "host": [
               "AZEIQPMDMWB01",
-              "mysmithfield",
+              "mysample",
               "com"
             ],
             "path": [
@@ -72,11 +72,11 @@
           }
         },
         "response": [],
-        "uid": "44198760-55140868-ffd0-4629-bd7f-4e432c9c5754"
+        "uid": "44198760-bf1bf848-e0ad-432e-85cd-b9d16b599db7"
       },
       {
         "name": "CompleteTask",
-        "id": "6b88aeb4-56a9-4510-a35d-eb1dc0ad83ce",
+        "id": "d0f460b8-8f98-4ce8-a671-5813ae4208d1",
         "request": {
           "method": "POST",
           "header": [
@@ -103,11 +103,11 @@
           }
         },
         "response": [],
-        "uid": "44198760-6b88aeb4-56a9-4510-a35d-eb1dc0ad83ce"
+        "uid": "44198760-d0f460b8-8f98-4ce8-a671-5813ae4208d1"
       },
       {
         "name": "CompleteTask-QA",
-        "id": "728cd115-0afe-4fbc-8fe8-80dabe397fc7",
+        "id": "7bcccaa2-a5dd-40d0-8b74-9629e0691c75",
         "request": {
           "method": "POST",
           "header": [
@@ -122,11 +122,11 @@
             "raw": "{\r\n    \"blueProjectId\": 997,\r\n    \"PMDMGarNumber\": \"GAR07738\",\r\n    \"XXXcurrentStatus\": \"DRAFT\",\r\n    \"sapNumber\": \"P5000508\",\r\n    \"fileUrl\": \"9999\"\r\n}"
           },
           "url": {
-            "raw": "http://AZEIQPMDMWB01.mysmithfield.com/BLUEAPI/CompleteTask",
+            "raw": "http://AZEIQPMDMWB01.mysample.com/BLUEAPI/CompleteTask",
             "protocol": "http",
             "host": [
               "AZEIQPMDMWB01",
-              "mysmithfield",
+              "mysample",
               "com"
             ],
             "path": [
@@ -136,7 +136,7 @@
           }
         },
         "response": [],
-        "uid": "44198760-728cd115-0afe-4fbc-8fe8-80dabe397fc7"
+        "uid": "44198760-7bcccaa2-a5dd-40d0-8b74-9629e0691c75"
       }
     ]
   },
