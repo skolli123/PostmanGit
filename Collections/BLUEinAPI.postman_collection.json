@@ -51,11 +51,11 @@
 					"raw": "{\r\n    \"blueProjectId\": 101,\r\n    \"currentStatus\": \"DRAFT\"\r\n}"
 				},
 				"url": {
-					"raw": "http://AZEIQPMDMWB01.mysmithfield.com/BLUEAPI/UpdateStatus",
+					"raw": "http://AZEIQPMDMWB01.mysample.com/BLUEAPI/UpdateStatus",
 					"protocol": "http",
 					"host": [
 						"AZEIQPMDMWB01",
-						"mysmithfield",
+						"mysample",
 						"com"
 					],
 					"path": [
@@ -111,11 +111,11 @@
 					"raw": "{\r\n    \"blueProjectId\": 997,\r\n    \"PMDMGarNumber\": \"GAR07738\",\r\n    \"XXXcurrentStatus\": \"DRAFT\",\r\n    \"sapNumber\": \"P5000508\",\r\n    \"fileUrl\": \"9999\"\r\n}"
 				},
 				"url": {
-					"raw": "http://AZEIQPMDMWB01.mysmithfield.com/BLUEAPI/CompleteTask",
+					"raw": "http://AZEIQPMDMWB01.mysample.com/BLUEAPI/CompleteTask",
 					"protocol": "http",
 					"host": [
 						"AZEIQPMDMWB01",
-						"mysmithfield",
+						"mysample",
 						"com"
 					],
 					"path": [
