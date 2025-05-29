@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "23b29312-ae7d-4e1e-a2fb-d3080f0925f2",
+		"name": "BLUEinAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9736231"
+	},
+	"item": [
+		{
+			"name": "UpdateStatus",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"blueProjectId\": 101,\r\n    \"PMDMGarNumber\": \"GAR07738\",\r\n    \"currentStatus\": \"Restart\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:64211/UpdateStatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64211",
+					"path": [
+						"UpdateStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateStatus-QA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"blueProjectId\": 101,\r\n    \"currentStatus\": \"DRAFT\"\r\n}"
+				},
+				"url": {
+					"raw": "http://AZEIQPMDMWB01.mysmithfield.com/BLUEAPI/UpdateStatus",
+					"protocol": "http",
+					"host": [
+						"AZEIQPMDMWB01",
+						"mysmithfield",
+						"com"
+					],
+					"path": [
+						"BLUEAPI",
+						"UpdateStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CompleteTask",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"blueProjectId\": 997,\r\n    \"PMDMGarNumber\": \"GAR07738\",\r\n    \"XXXcurrentStatus\": \"DRAFT\",\r\n    \"sapNumber\": \"P5000508\",\r\n    \"fileUrl\": \"9999\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:64211/CompleteTask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64211",
+					"path": [
+						"CompleteTask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CompleteTask-QA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"blueProjectId\": 997,\r\n    \"PMDMGarNumber\": \"GAR07738\",\r\n    \"XXXcurrentStatus\": \"DRAFT\",\r\n    \"sapNumber\": \"P5000508\",\r\n    \"fileUrl\": \"9999\"\r\n}"
+				},
+				"url": {
+					"raw": "http://AZEIQPMDMWB01.mysmithfield.com/BLUEAPI/CompleteTask",
+					"protocol": "http",
+					"host": [
+						"AZEIQPMDMWB01",
+						"mysmithfield",
+						"com"
+					],
+					"path": [
+						"BLUEAPI",
+						"CompleteTask"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
