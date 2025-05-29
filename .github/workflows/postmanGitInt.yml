@@ -1,4 +1,4 @@
-name: Import Postman Collection 
+name: Import Postman Collection Test 
 
 on:
   push:
