@@ -19,7 +19,7 @@ jobs:
     - name: Import Collection to Postman (Create New)
       env:
         POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
-        COLLECTION_FILE: API/DocuSeal.json
+        COLLECTION_FILE: Collections/BLUEinAPI.postman_collection.json
 
       run: |
         WRAPPED_FILE=$(mktemp)
@@ -103,11 +103,11 @@ jobs:
 
     - name: Commit patched OpenAPI file to repo
       run: |
-        git config --global user.name "laxman"
-        git config --global user.email "lvadapalli@gmail.comcom"
+        git config --global user.name "skolli123"
+        git config --global user.email "skolli@prolifics.com"
 
         # Move the file into API/ directory (adjust if needed)
-        mv apic-friendly-secure-import.json API/apic-friendly-secure-import.json
+        mv apic-friendly-secure-import.json Collections/apic-friendly-secure-import.json
 
         git pull origin main
         git add API/apic-friendly-secure-import.json
