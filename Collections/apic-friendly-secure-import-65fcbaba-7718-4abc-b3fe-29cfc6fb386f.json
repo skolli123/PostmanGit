@@ -1,0 +1,245 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "BLUEinAPI",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "servers": [
+    {
+      "url": "http://localhost"
+    },
+    {
+      "url": "http://AZEIQPMDMWB01.mysample.com"
+    }
+  ],
+  "paths": {
+    "/UpdateStatus": {
+      "post": {
+        "summary": "UpdateStatus",
+        "description": "UpdateStatus",
+        "operationId": "updatestatus",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "PMDMGarNumber": {
+                    "type": "string",
+                    "example": "GAR07738"
+                  },
+                  "blueProjectId": {
+                    "type": "number",
+                    "example": 101
+                  },
+                  "currentStatus": {
+                    "type": "string",
+                    "example": "Restart"
+                  }
+                }
+              },
+              "examples": {
+                "UpdateStatus": {
+                  "value": {
+                    "PMDMGarNumber": "GAR07738",
+                    "blueProjectId": 101,
+                    "currentStatus": "Restart"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/BLUEAPI/UpdateStatus": {
+      "post": {
+        "summary": "UpdateStatus-QA",
+        "description": "UpdateStatus-QA",
+        "operationId": "updatestatusQa",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "blueProjectId": {
+                    "type": "number",
+                    "example": 101
+                  },
+                  "currentStatus": {
+                    "type": "string",
+                    "example": "DRAFT"
+                  }
+                }
+              },
+              "examples": {
+                "UpdateStatus-QA": {
+                  "value": {
+                    "blueProjectId": 101,
+                    "currentStatus": "DRAFT"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/CompleteTask": {
+      "post": {
+        "summary": "CompleteTask",
+        "description": "CompleteTask",
+        "operationId": "completetask",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "PMDMGarNumber": {
+                    "type": "string",
+                    "example": "GAR07738"
+                  },
+                  "XXXcurrentStatus": {
+                    "type": "string",
+                    "example": "DRAFT"
+                  },
+                  "blueProjectId": {
+                    "type": "number",
+                    "example": 997
+                  },
+                  "fileUrl": {
+                    "type": "string",
+                    "example": "9999"
+                  },
+                  "sapNumber": {
+                    "type": "string",
+                    "example": "P5000508"
+                  }
+                }
+              },
+              "examples": {
+                "CompleteTask": {
+                  "value": {
+                    "PMDMGarNumber": "GAR07738",
+                    "XXXcurrentStatus": "DRAFT",
+                    "blueProjectId": 997,
+                    "fileUrl": "9999",
+                    "sapNumber": "P5000508"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/BLUEAPI/CompleteTask": {
+      "post": {
+        "summary": "CompleteTask-QA",
+        "description": "CompleteTask-QA",
+        "operationId": "completetaskQa",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "PMDMGarNumber": {
+                    "type": "string",
+                    "example": "GAR07738"
+                  },
+                  "XXXcurrentStatus": {
+                    "type": "string",
+                    "example": "DRAFT"
+                  },
+                  "blueProjectId": {
+                    "type": "number",
+                    "example": 997
+                  },
+                  "fileUrl": {
+                    "type": "string",
+                    "example": "9999"
+                  },
+                  "sapNumber": {
+                    "type": "string",
+                    "example": "P5000508"
+                  }
+                }
+              },
+              "examples": {
+                "CompleteTask-QA": {
+                  "value": {
+                    "PMDMGarNumber": "GAR07738",
+                    "XXXcurrentStatus": "DRAFT",
+                    "blueProjectId": 997,
+                    "fileUrl": "9999",
+                    "sapNumber": "P5000508"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "tags": [],
+  "components": {
+    "securitySchemes": {
+      "SecSchemeStub": {
+        "type": "apiKey",
+        "x-key-type": "client_id",
+        "name": "X-IBM-Client-Id",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "SecSchemeStub": []
+    }
+  ],
+  "x-ibm-configuration": {
+    "assembly": {
+      "execute": [
+        {
+          "invoke": {
+            "version": "2.0.0",
+            "title": "invoke",
+            "target-url": "$(target-url)$(request.path)"
+          }
+        }
+      ]
+    },
+    "properties": {
+      "target-url": {
+        "value": "http://localhost",
+        "description": "The URL of the target service",
+        "encoded": false
+      }
+    }
+  }
+}
